@@ -5,7 +5,7 @@
 #ifndef ADDTASK_INPUTDATA_H
 #define ADDTASK_INPUTDATA_H
 
-
+//Input Data to be processed
 class InputData {
 private:
     int x;
