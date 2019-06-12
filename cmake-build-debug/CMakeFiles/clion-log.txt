@@ -1,0 +1,5 @@
+/home/henok/clion-2019.1.4/bin/cmake/linux/bin/cmake -DCMAKE_BUILD_TYPE=Debug -DHedgehog_INCLUDE_DIR=/home/henok/Desktop/hedgehog/hedgehog -G "CodeBlocks - Unix Makefiles" /home/henok/Desktop/HedgeHogFiles/TutorialOne
+-- Found Hedgehog include: /home/henok/Desktop/hedgehog/hedgehog, CXX_FLAGS:  -ansi;-pthread, Libs: stdc++fs;-lpthread
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/henok/Desktop/HedgeHogFiles/TutorialOne/cmake-build-debug

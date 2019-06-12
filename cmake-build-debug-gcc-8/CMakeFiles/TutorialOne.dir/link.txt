@@ -1,0 +1,1 @@
+/usr/bin/g++-8  -g   CMakeFiles/TutorialOne.dir/main.cpp.o  -o TutorialOne -lstdc++fs -lpthread 
