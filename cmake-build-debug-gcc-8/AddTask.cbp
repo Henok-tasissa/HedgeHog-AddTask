@@ -86,7 +86,13 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/home/henok/Desktop/HedgeHogFiles/AddTask/data/InputData.h">
+			<Option target="AddTask"/>
+		</Unit>
 		<Unit filename="/home/henok/Desktop/HedgeHogFiles/AddTask/main.cpp">
+			<Option target="AddTask"/>
+		</Unit>
+		<Unit filename="/home/henok/Desktop/HedgeHogFiles/AddTask/task/AddTask.h">
 			<Option target="AddTask"/>
 		</Unit>
 		<Unit filename="/home/henok/Desktop/HedgeHogFiles/AddTask/CMakeLists.txt">

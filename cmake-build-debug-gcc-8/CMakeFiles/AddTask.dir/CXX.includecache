@@ -6,11 +6,25 @@
 
 #IncludeRegexTransform: 
 
+/home/henok/Desktop/HedgeHogFiles/AddTask/./data/InputData.h
+
+/home/henok/Desktop/HedgeHogFiles/AddTask/./task/AddTask.h
+iostream
+-
+hedgehog.h
+/home/henok/Desktop/HedgeHogFiles/AddTask/./task/hedgehog.h
+../data/InputData.h
+/home/henok/Desktop/HedgeHogFiles/AddTask/./data/InputData.h
+
 /home/henok/Desktop/HedgeHogFiles/AddTask/main.cpp
 iostream
 -
 hedgehog.h
 /home/henok/Desktop/HedgeHogFiles/AddTask/hedgehog.h
+./task/AddTask.h
+/home/henok/Desktop/HedgeHogFiles/AddTask/./task/AddTask.h
+./data/InputData.h
+/home/henok/Desktop/HedgeHogFiles/AddTask/./data/InputData.h
 
 /home/henok/Desktop/hedgehog/hedgehog/api/cuda/abstract_cuda_task.h
 
