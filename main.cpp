@@ -4,7 +4,7 @@
 #include "./data/InputData.h"
 int main() {
     //Initialize Add Task
-    std::shared_ptr<AddTask> addTask = std::make_shared<AddTask>();
+    std::shared_ptr<AddTask> addTask = std::make_shared<AddTask>("AddTask",4);
 
     //Start Graph
     auto myGraph = std::make_shared<Graph<int, InputData>>();
@@ -32,6 +32,8 @@ int main() {
     }
 
     myGraph->waitForTermination();
+
+    //Generate dot file
     myGraph->createDotFile("AddTask.dot");
     return 0;
 }

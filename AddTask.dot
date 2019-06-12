@@ -1,0 +1,8 @@
+digraph x0x55dc6a40f5b0 {
+label="Graph\nExecution time:420us\nCreation time:195us"; fontsize=25; penwidth=5; ranksep=0; labelloc=top; labeljust=left;
+x0x55dc6a40ef68 [label="AddTask x 4\nWait Time: 0us +- 0us\nExecution Time: 13us +- 23us",shape=circle];
+x0x55dc6a40f828 [label="Source", shape=doublecircle];
+x0x55dc6a40fa58 [label="Sink",shape=point];
+x0x55dc6a40ef68 -> x0x55dc6a40fa58[label="int"];
+x0x55dc6a40f828 -> x0x55dc6a40ef68[label="InputData"];
+}

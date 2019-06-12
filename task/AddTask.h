@@ -11,7 +11,7 @@
 
 class AddTask: public AbstractTask<int, InputData> {
 public:
-    //AddTask(const std::string_view &name,size_t numberThreads) : AbstractTask(name, numberThreads){}
+    AddTask(const std::string_view &name,size_t numberThreads) : AbstractTask(name, numberThreads){}
     AddTask(){}
 
     void execute(std::shared_ptr<InputData> inputData) override{
@@ -25,6 +25,9 @@ public:
         addResult(total);
     }
 
+    std::shared_ptr<AbstractTask<int, InputData>> copy() override {
+        return std::make_shared<AddTask>(this->name(),this->numberThreads());
+    }
 };
 
 #endif //ADDTASK_ADDTASK_H
