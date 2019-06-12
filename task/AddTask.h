@@ -15,11 +15,9 @@ public:
     AddTask(){}
 
     void execute(std::shared_ptr<InputData> inputData) override{
-        std::shared_ptr<int> x = std::make_shared<int>(inputData->getX());
-        std::shared_ptr<int> y = std::make_shared<int>(inputData->getY());
 
         //Add the values for the given inputData
-        std::shared_ptr<int> total = std::make_shared<int>((*x)+(*y));
+        std::shared_ptr<int> total = std::make_shared<int>(inputData->getX()+inputData->getY());
 
         //Add to producer
         addResult(total);

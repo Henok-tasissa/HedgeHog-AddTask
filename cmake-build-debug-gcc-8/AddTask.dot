@@ -1,8 +1,22 @@
-digraph x0x559bfc9f15b0 {
-label="Graph\nExecution time:21.112ms\nCreation time:269us"; fontsize=25; penwidth=5; ranksep=0; labelloc=top; labeljust=left;
-x0x559bfc9f0f68 [label="AddTask x 4\nWait Time: 0us +- 0us\nExecution Time: 9us +- 17us",shape=circle];
-x0x559bfc9f1828 [label="Source", shape=doublecircle];
-x0x559bfc9f1a58 [label="Sink",shape=point];
-x0x559bfc9f0f68 -> x0x559bfc9f1a58[label="int"];
-x0x559bfc9f1828 -> x0x559bfc9f0f68[label="InputData"];
+digraph x0x55c5749aa5b0 {
+label="Graph\nExecution time:543us\nCreation time:281us"; fontsize=25; penwidth=5; ranksep=0; labelloc=top; labeljust=left;
+subgraph clusterx0x55c5749a9f68 {
+label=""; penwidth=1; style=dotted;
+boxx0x55c5749a9f68[label="", shape=egg];
+x0x55c5749a9f68 [label="AddTask\nWait Time: 0us\nExecution Time: 0us",shape=circle,color="#0000ff"];
+x0x55c5749ab428 [label="AddTask\nWait Time: 0us\nExecution Time: 0us",shape=circle,color="#0000ff"];
+x0x55c5749abae8 [label="AddTask\nWait Time: 0us\nExecution Time: 0us",shape=circle,color="#0000ff"];
+x0x55c5749abd78 [label="AddTask\nWait Time: 0us\nExecution Time: 188us",shape=circle,color="#0000ff"];
+}
+x0x55c5749aa828 [label="Source", shape=doublecircle];
+x0x55c5749aaa58 [label="Sink",shape=point];
+boxx0x55c5749a9f68 -> x0x55c5749a9f68
+x0x55c5749a9f68 -> x0x55c5749aaa58[label="int 0 (1)",ltail=clusterx0x55c5749a9f68];
+boxx0x55c5749a9f68 -> x0x55c5749ab428
+x0x55c5749ab428 -> x0x55c5749aaa58[label="int 0 (1)",ltail=clusterx0x55c5749a9f68];
+boxx0x55c5749a9f68 -> x0x55c5749abae8
+x0x55c5749abae8 -> x0x55c5749aaa58[label="int 0 (1)",ltail=clusterx0x55c5749a9f68];
+boxx0x55c5749a9f68 -> x0x55c5749abd78
+x0x55c5749abd78 -> x0x55c5749aaa58[label="int 0 (1)",ltail=clusterx0x55c5749a9f68];
+x0x55c5749aa828 -> boxx0x55c5749a9f68[label="InputData 0 (10)",lhead=clusterx0x55c5749a9f68];
 }

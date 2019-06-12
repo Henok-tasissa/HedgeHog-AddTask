@@ -20,9 +20,7 @@ int main() {
 
     //Consume data
     for(int i=0;i<10;i++){
-        std::shared_ptr<InputData> inputData = std::make_shared<InputData>(i,i);
-
-        myGraph->pushData(inputData);
+        myGraph->pushData(std::make_shared<InputData>(i,i));
     }
     myGraph->finishPushingData();
 
@@ -34,6 +32,6 @@ int main() {
     myGraph->waitForTermination();
 
     //Generate dot file
-    myGraph->createDotFile("AddTask.dot");
+    myGraph->createDotFile("AddTask.dot",ColorScheme::WAIT,StructureOptions::ALL);
     return 0;
 }
