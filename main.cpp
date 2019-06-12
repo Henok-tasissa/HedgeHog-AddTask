@@ -22,6 +22,6 @@ int main() {
     }
 
     myGraph->waitForTermination();
-
+    myGraph->createDotFile("AddTask.dot");
     return 0;
 }
